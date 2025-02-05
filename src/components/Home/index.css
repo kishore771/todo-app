@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #70adeb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  /* Todo Content */
+  .todo-content {
+    background-color: #70adeb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .todo-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .labels {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .title {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Add Button */
+  .add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Todos Card */
+  .todos-card {
+    background: #fffefe;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 82%;
+  }
+
+  .saved-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Saved Todos */
+  .saved-todo {
+    margin-top: 15px;
+  }
+  
+  .lists {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Checkbox */
+  .list-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Completed Todo */
+  .line-through {
+    text-decoration: line-through;
+  }
+  
+  .text-grey-500 {
+    color: #6b7280;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Todo Image */
+  .todo-image {
+    margin-top: 20px;
+  }
+  
+  .home-image-icon {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    .todo-container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 50px;
+    }
+  
+    .todo-content {
+    background-color: #70adeb;
+      width: 40%;
+      max-width: 450px;
+    }
+  
+    .todo-image {
+      width: 40%;
+    }
+  
+    .home-image-icon {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 767px) {
+    .todo-container {
+        display: flex;
+        flex-direction: column-reverse;
+      padding: 20px;
+    }
+
+    .your-todo{
+        padding-top: 5px;
+    }
+
+    .todos-card{
+        width: 75%;
+    }
+  
+    .todo-content {
+      width: 100%;
+    }
+  
+    .list-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .delete-btn {
+      margin-top: 5px;
+    }
+  
+    .home-image-icon {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
