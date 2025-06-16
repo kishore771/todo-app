@@ -121,13 +121,14 @@ body {
   }
   
   /* Completed Todo */
-  .line-through {
-    text-decoration: line-through;
-  }
-  
-  .text-grey-500 {
-    color: #6b7280;
-  }
+  .todo-text {
+  color: black;
+  margin-left: 10px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
   
   /* Delete Button */
   .delete-btn {
@@ -170,7 +171,7 @@ body {
     }
   
     .todo-image {
-      width: 40%;
+      width: 20%;
     }
   
     .home-image-icon {
@@ -209,7 +210,8 @@ body {
     }
   
     .home-image-icon {
-      width: 100%;
+      width: 50%;
+      aling-self: center;
       max-width: 300px;
     }
   }
